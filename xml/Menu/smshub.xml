@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/smshub/send</path>
+    <page_callback>CRM_Smshub_Page_Send</page_callback>
+    <title>Send API</title>
+    <access_callback>1</access_callback>
+    <is_public>true</is_public>
+  </item>
+  <item>
+    <path>civicrm/smshub/status</path>
+    <page_callback>CRM_Smshub_Page_Status</page_callback>
+    <title>Status API</title>
+    <access_callback>1</access_callback>
+    <is_public>true</is_public>
+  </item>
+  <item>
+    <path>civicrm/smshub/receive</path>
+    <page_callback>CRM_Smshub_Page_Receive</page_callback>
+    <title>Receive API</title>
+    <access_callback>1</access_callback>
+    <is_public>true</is_public>
+  </item>
+</menu>

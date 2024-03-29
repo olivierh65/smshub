@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<table>
+  <base>CRM/Smshub</base>
+  <class>SmsMessage</class>
+  <name>civicrm_sms_message</name>
+  <comment>FIXME</comment>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Unique SmsMessage ID</comment>
+    <html>
+      <type>Number</type>
+    </html>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+  <field>
+    <name>mailing_id</name>
+    <type>int unsigned</type>
+    <comment>Mailing ID</comment>
+  </field>
+  <field>
+    <name>message_id</name>
+    <type>int unsigned</type>
+    <comment>Message ID</comment>
+  </field>
+  <field>
+    <name>contact_id</name>
+    <type>int unsigned</type>
+    <comment>Contact ID</comment>
+  </field>
+  <field>
+    <name>message</name>
+    <type>text</type>
+    <length>1024</length>
+    <comment>Message to send</comment>
+    <required>true</required>
+  </field>
+  <field>
+    <name>number</name>
+    <type>text</type>
+    <length>24</length>
+    <comment>Phone number</comment>
+    <required>true</required>
+  </field>
+  <field>
+    <name>is_send</name>
+    <type>boolean</type>
+    <comment>Already send?</comment>
+    <default>0</default>
+  </field>
+  <field>
+    <name>date_send</name>
+    <type>datetime</type>
+    <comment>When send</comment>
+    <default>null</default>
+  </field>
+  <field>
+    <name>is_delivered</name>
+    <type>boolean</type>
+    <comment>Already delivered?</comment>
+    <default>0</default>
+  </field>
+  <field>
+    <name>date_delivered</name>
+    <type>datetime</type>
+    <comment>When delivered</comment>
+    <default>null</default>
+  </field>
+</table>
