@@ -146,7 +146,7 @@ function smshub_civicrm_buildForm($formName, $form) {
   // TODO : check if it is possible to evaluate tokens before checking message length
   if ($formName == 'CRM_SMS_Form_Upload') {
 
-    $providers = \Civi\Api4\Provider::get(false)
+    $providers = \Civi\Api4\SmsProvider::get(false)
       ->addWhere('id', '=', $form->_defaultValues['sms_provider_id'])
       ->execute();
     if ($providers->first()['name'] == "ol65.smshub") {
